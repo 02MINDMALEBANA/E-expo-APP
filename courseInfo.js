@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, Pressable, ScrollView } from 'react-native';
 
 export default function CourseInfo(){
     return(
         <View style={styles.container}> 
+        <ScrollView>
             <View style={styles.info}>
                 
                 <Text style={{color:'#2963E1',fontSize:24,fontWeight:400,marginLeft:80}}>Course Info</Text>
@@ -23,7 +24,7 @@ export default function CourseInfo(){
           </View>
         </TouchableOpacity>
             </View>
-       
+       </ScrollView>
         </View>
     )
 }
@@ -40,7 +41,8 @@ const styles = StyleSheet.create({
         borderRadius:18,
         borderWidth:3,
         borderColor:'#2963E1',
-        marginTop:60
+        marginTop:80,
+        marginLeft:20
                                         
 
     },

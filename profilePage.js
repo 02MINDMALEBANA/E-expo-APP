@@ -1,7 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ImageBackground, TouchableOpacity, ScrollView,TextInput } from 'react-native';
+import SelectList from 'react-native-dropdown-select-list'
+import { useState } from 'react';
+import React from 'react';
+// import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+
 
 export default function ProfilePage() {
+  // const [selected, setSelected] = React.useState("");
+  
+  // const data = [
+  //   {key:'1',value:''},
+  //   {key:'2',value:'Male'},
+  //   {key:'3',value:'Female'},
+    
+  // ];
   return (
     <View style={styles.container}>
       <View style={styles.top}>
@@ -17,6 +30,17 @@ export default function ProfilePage() {
         <View style={styles.personal}>
           <Text style={{color:'white',fontSize:20,fontWeight:600, marginLeft:40}}>PERSONAL DETAILS</Text>
         </View>
+        {/* <SelectList 
+      // onSelect={() => alert(selected)}
+      setSelected={setSelected} 
+      data={data}  
+      style={{borderColor:'#2963E1',  marginLeft:200,marginTop:'0',width:50}}
+      // arrowicon={<FontAwesome name="chevron-down" size={12} color={'black'} />} 
+      // searchicon={<FontAwesome name="search" size={12} color={'black'} />} 
+      // search={false} 
+      boxStyles={{borderRadius:0}} //override default styles
+      defaultOption={{ key:'1', value:'' }}   //default selected option
+    /> */}
         <Text style={{color:'red',marginLeft:15,marginTop:10}}>*</Text><Text style={styles.names}>Full names(s)</Text>
         <TextInput style={styles.input}></TextInput>
         <Text style={{color:'red',marginLeft:15,marginTop:10}}>*</Text><Text style={styles.names}>Last name</Text>

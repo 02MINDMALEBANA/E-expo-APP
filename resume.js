@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
         borderRadius:18,
         borderWidth:3,
         borderColor:'#2963E1',
-        marginTop:80
+        marginTop:120
         // marginTop:'-100%'
                                         
 
