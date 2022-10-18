@@ -6,15 +6,27 @@ import React from 'react';
 // import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 
 
-export default function ProfilePage() {
-  // const [selected, setSelected] = React.useState("");
+export default function ProfilePage({navigation}) {
+  const [selected, setSelected] = React.useState("");
   
-  // const data = [
-  //   {key:'1',value:''},
-  //   {key:'2',value:'Male'},
-  //   {key:'3',value:'Female'},
+  const data = [
+    {key:'1',value:'Male'},
+    {key:'2',value:'Female'},
     
-  // ];
+  ];
+  const ethnic= [
+    {key:'1',value:'Afican'},
+    {key:'2',value:'Colored'},
+    {key:'3',value:'Indian'},
+    {key:'4',value:'White'},
+    {key:'5',value:'Unknown'},
+    
+  ];
+  const  nationality =[
+    {key:'1',value:'South Afican'},
+    {key:'2',value:'Non South African'},
+
+  ]
   return (
     <View style={styles.container}>
       <View style={styles.top}>
@@ -34,11 +46,11 @@ export default function ProfilePage() {
       // onSelect={() => alert(selected)}
       setSelected={setSelected} 
       data={data}  
-      style={{borderColor:'#2963E1',  marginLeft:200,marginTop:'0',width:50}}
+      style={styles.input}
       // arrowicon={<FontAwesome name="chevron-down" size={12} color={'black'} />} 
       // searchicon={<FontAwesome name="search" size={12} color={'black'} />} 
       // search={false} 
-      boxStyles={{borderRadius:0}} //override default styles
+      boxStyles={{borderRadius:0, borderColor:'#2963E1', borderWidth:3, marginLeft:200,}} //override default styles
       defaultOption={{ key:'1', value:'' }}   //default selected option
     /> */}
         <Text style={{color:'red',marginLeft:15,marginTop:10}}>*</Text><Text style={styles.names}>Full names(s)</Text>
@@ -50,13 +62,34 @@ export default function ProfilePage() {
         <Text style={{color:'red',marginLeft:15,marginTop:10}}>*</Text><Text style={styles.names}>ID number</Text>
         <TextInput style={styles.input}></TextInput>
         <Text style={{color:'red',marginLeft:15,marginTop:10}}>*</Text><Text style={styles.names}>Gender</Text>
-        <TextInput style={styles.input}></TextInput>
+          <SelectList
+            // onSelect={() => alert(selected)}
+            setSelected={setSelected}
+            data={data}
+            boxStyles={{ borderRadius: 0, borderColor: '#2963E1', borderWidth: 3, marginLeft: 200, height: 15, marginTop: '-5%' }} //override default styles
+          // defaultOption={{ key:'1', value:'' }}   //default selected option
+          />
+        {/* <TextInput style={styles.input}></TextInput> */}
         <Text style={{color:'red',marginLeft:15,marginTop:10}}>*</Text><Text style={styles.names}>Email</Text>
         <TextInput style={styles.input}></TextInput>
         <Text style={{color:'red',marginLeft:15,marginTop:10}}>*</Text><Text style={styles.names}>Nationality</Text>
-        <TextInput style={styles.input}></TextInput>
-        <Text style={{color:'red',marginLeft:15,marginTop:10}}>*</Text><Text style={styles.names}>Ethic</Text>
-        <TextInput style={styles.input}></TextInput>
+          <SelectList
+            // onSelect={() => alert(selected)}
+            setSelected={setSelected}
+            data={nationality}
+            boxStyles={{ borderRadius: 0, borderColor: '#2963E1', borderWidth: 3, marginLeft: 200, height: 15, marginTop: '-5%' }} //override default styles
+          // defaultOption={{ key:'1', value:'' }}   //default selected option
+          />
+          {/* <TextInput style={styles.input}></TextInput> */}
+          <Text style={{ color: 'red', marginLeft: 15, marginTop: 10 }}>*</Text><Text style={styles.names}>Ethnic</Text>
+          <SelectList
+            // onSelect={() => alert(selected)}
+            setSelected={setSelected}
+            data={ethnic}
+            boxStyles={{ borderRadius: 0, borderColor: '#2963E1', borderWidth: 3, marginLeft: 200, height: 15, marginTop: '-5%' }} //override default styles
+          // defaultOption={{ key:'1', value:'' }}   //default selected option
+          />
+        {/* <TextInput style={styles.input}></TextInput> */}
 
         <View style={styles.personal}>
           <Text style={{color:'white',fontSize:20,fontWeight:600, marginLeft:40}}>EDUCATIONAL INFORMATION</Text>
