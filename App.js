@@ -29,12 +29,12 @@ const login = () =>{
       <View style={styles.profs}></View>
       <View style={styles.prof}>
         <Image
-        source={require('./assets/hexB.jfif')}
+        source={require('./assets/hexagon-blue.png')}
         style={{width:49, height:51, marginLeft:"-40%", marginTop:30}}
 
         />
           <Image
-       source={require('./assets/hexD.jfif')}
+       source={require('./assets/dark.png')}
        style={{width:21, height:30, marginLeft:"-30%", marginTop:60}}
 
         />
@@ -43,7 +43,7 @@ const login = () =>{
             style={{width:120,height:120, alignSelf:'center',marginTop:25, borderRadius:60, position:'absolute'}} 
         />
             <Image
-         source={require('./assets/hexD.jfif')}
+         source={require('./assets/dark.png')}
          style={{width:41, height:45, marginLeft:"128%", marginTop:"-35%"}}
 
         />
