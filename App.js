@@ -11,6 +11,9 @@ import Login from './login';
 import ForgotPassword from './forgotPassword';
 import Resume from './resume';
 
+import FacultyDetails from './FacultyDetails';
+
+
 
  function SignUP() {
   const navigation = useNavigation();
@@ -109,6 +112,8 @@ export default function App(){
       <Stack.Screen name="courseinfo" component={CourseInfo} />
       <Stack.Screen name="forgotPassword" component={ForgotPassword} />
       <Stack.Screen name="resume" component={Resume}/>
+      {/* <Stack.Screen name="SearchVarsity" component={SearchVarsity} />
+          <Stack.Screen name="Varsity" component={Varsity} /> */}
 
     </Stack.Navigator>
   </NavigationContainer>
