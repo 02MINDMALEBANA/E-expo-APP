@@ -2,15 +2,15 @@ import { Image, Pressable, ScrollView, StatusBar, StyleSheet, Text, TextInput, T
 import React from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons'
 import { FlatGrid } from 'react-native-super-grid';
-import NWU from '../assets/NWU.jpg'
-import UFS from '../assets/UFS.jpg'
-import UJ from '../assets/UJ.jpg'
-import UL from '../assets/UL.jpg'
-import Ukzn from '../assets/Ukzn.jpg'
-import UMP from '../assets/UMP.jpg'
-import UP from '../assets/UP.jpg'
-import Univen from '../assets/Univen.jpg'
-import Wits from '../assets/Wits.jpg'
+import NWU from './assets/NWU.jpg'
+import UFS from './assets/UFS.jpg'
+import UJ from './assets/UJ.jpg'
+import UL from './assets/UL.jpg'
+import Ukzn from './assets/Ukzn.jpg'
+import UMP from './assets/UMP.jpg'
+import UP from './assets/UP.jpg'
+import Univen from './assets/Univen.jpg'
+import Wits from './assets/Wits.jpg'
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 
