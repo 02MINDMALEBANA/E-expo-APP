@@ -10,6 +10,7 @@ import CourseInfo from './courseInfo';
 import Login from './login';
 import ForgotPassword from './forgotPassword';
 import Resume from './resume';
+import FacultyInfo from './facultyInfo';
 
 // import FacultyDetails from './FacultyDetails';
 import UserHistory from './userHistory';
@@ -104,7 +105,7 @@ const Stack = createNativeStackNavigator();
 export default function App(){
   return(
     <NavigationContainer>
-    <Stack.Navigator initialRouteName='login' screenOptions={{
+    <Stack.Navigator initialRouteName='signup' screenOptions={{
       headerShown: false,
     }}>
       <Stack.Screen name="signup" component={SignUP}/>
@@ -117,8 +118,8 @@ export default function App(){
       <Stack.Screen name="history" component={UserHistory}/>
       <Stack.Screen name="search" component={SearchVarsity}/>
 
-      {/* <Stack.Screen name="SearchVarsity" component={SearchVarsity} />
-          <Stack.Screen name="Varsity" component={Varsity} /> */}
+      <Stack.Screen name="facultyinfo" component={FacultyInfo} />
+         {/* <Stack.Screen name="Varsity" component={Varsity} /> */}
 
     </Stack.Navigator>
   </NavigationContainer>
